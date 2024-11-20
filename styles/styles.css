@@ -1,13 +1,28 @@
 :root {
     --heading-background: darkblue;
     --heading-text-color: white;
-    --heading-font: "Times New Roman";
     --border: 1px solid rgba(0, 0, 0, 0.2);
+    --padding: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: var(--border);
+    background-color: #eee;
+    color: #333;
 }
 
 nav {
     background-color: var(--heading-background);
-    padding: 10px;
+    padding: var(--padding);
 }
 
 nav a {
@@ -18,6 +33,7 @@ nav a {
 
 h1 {
     color: darkblue;
+    padding: var(--padding);
 }
 
 main img {
@@ -26,24 +42,31 @@ main img {
     border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 10px;
 }
 
 p {
-    padding: 0;
+    padding: var(--padding);
 }
 
 main {
     max-width: 840px;
 }
 
+li {
+    padding: 2px;
+    margin-left: 15px;
+}
+
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: var(--border); /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+}
+
+aside h2 {
+    position: relative;
+    top: 90px;
 }
 
 aside img {
