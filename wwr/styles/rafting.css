@@ -3,8 +3,8 @@
     --secondary-color: #ffffff;
     --accent1-color: #9B7D5D;
     --accent2-color: #6A89A5;
-    --heading-font: "Bangers";
-    --text-font: "DM Serif Text";
+    --heading-font: Bangers;
+    --text-font: .dm-serif-text-regular;
     --page-size: 1100px;
 }
 .bangers-regular {
