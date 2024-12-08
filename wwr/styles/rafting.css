@@ -4,24 +4,28 @@
     --accent1-color: #9B7D5D;
     --accent2-color: #6A89A5;
     --heading-font: Bangers;
-    --text-font: .dm-serif-text-regular;
+    --text-font: "DM Serif Text";
     --page-size: 1100px;
-}
-.bangers-regular {
+  }
+  
+  .bangers-regular {
     font-family: "Bangers", system-ui;
     font-weight: 400;
     font-style: normal;
   }
-.dm-serif-text-regular {
+  
+  .dm-serif-text-regular {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
   }
-.dm-serif-text-regular-italic {
+  
+  .dm-serif-text-regular-italic {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: italic;
   }
+  
 h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -48,6 +52,10 @@ p {
     color: var(--primary-color);
     font-family: var(--heading-font);
     text-align: left;
+}
+iframe {
+    width: 350px;
+    height: 250px;
 }
 .body-container {
     max-width: var(--page-size);
@@ -123,9 +131,15 @@ article {
     text-align: center;
     justify-content: center;
 }
-.adventure-layout img {
+.adventure-img {
     width: 190px;
     height: 130px;
+    object-fit: cover;
+    margin: 0 -20px 0 -20px;
+}
+.employee-img {
+    width: 180px;
+    height: 260px;
     object-fit: cover;
     margin: 0 -20px 0 -20px;
 }
@@ -133,6 +147,78 @@ article {
     color: var(--primary-color);
     font-family: var(--heading-font);
 }
+form {
+    margin: 10px;
+    padding: 5px;
+    border: var(--primary-color);
+    border-radius: 0.2px;
+    background-color: var(--accent2-color);
+    display: grid;
+    color: var(--primary-color);
+    font-size: 1rem;
+    place-items: center;
+}
+fieldset {
+    display: grid;
+    grid-gap: 20px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid var(--primary-color);
+    width: 1000px;
+    font-family: var(--heading-font);
+}
+
+legend {
+    padding: 15px 30px 2px 30px;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+label, input, button, select, textarea {
+    font-family: var(--text-font);
+}
+
+label {
+    text-align: left;
+    padding-right: 15px;
+}
+
+input, select, textarea {
+    font-size: 1.15rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+button {
+    margin: 5px;
+    border-radius: 0.5px;
+    font-size: 1.15rem;
+    width: 155px;
+    height: 40px;
+    background-color: var(--accent1-color);
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1.15fr 1fr 1.5fr;
+}
+
+.column2 {
+    grid-template-columns: 1fr 4.5fr 4.15fr;
+}
+
+.column3 {
+    grid-template-columns: 1fr 29fr;
+}
+
 footer p {
     text-align: center;
     position: absolute;
@@ -140,7 +226,7 @@ footer p {
     left: 0;
     right: 0;
 }
-footer a {
+footer nav a {
     text-decoration: none;
     float: right;
     margin-left: 6px;

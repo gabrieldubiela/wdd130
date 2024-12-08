@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Whitewater Rafting</title>
+    <meta name="author" content="Gabriel Dubiela">
+    <meta name="description" content="WDD 103 project - Contact Page">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="body-container">
+    <header>
+        <img class="header-logo" src="images/logo.jpg" alt="Logo">
+        <nav class="header-navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+        </nav>
+    </header> 
+    <main>
+        <h2>Company Information</h2>
+        <p>Address: 123 Main Street, Anytown, CA 12345, USA</p>
+        <p>Phone: 999-999-9999</p>
+        <p>Email: contact@wwr.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14583.406190308153!2d-46.345402488977044!3d-23.965689098680997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03181d175fe5%3A0x699ff6a5c0159bf3!2sPraia%20Santos%20Canal%202!5e0!3m2!1spt-BR!2sbr!4v1733616040478!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Employees</h2>
+        <div class="adventure-layout">
+            <figure>
+                <img class="employee-img" src="images/john-smith.jpg" alt="John Smith">
+                <figcaption>John Smith<br>Guide</figcaption>
+            </figure>
+            <figure>
+                <img class="employee-img" src="images/jennifer-brown.jpg" alt="Jennifer Brown">
+                <figcaption>Jennifer Brown<br>Manager</figcaption>
+            </figure>
+            <figure>
+                <img class="employee-img" src="images/mary-johnson.jpg" alt="Mary Johnson">
+                <figcaption>Mary Johnson<br>Comercial</figcaption>
+            </figure>
+        </div>
+        <h2>Send us a message</h2>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="usermail">Email</label>
+                    <input type="email" id="usermail" name="usermail">
+                </div>            
+            </fieldset>
+            <fieldset>
+                <legend>Message Information</legend>
+                <label>What is the purpose of your message?</label>
+                <div class="form-item column3">
+                    <input type="radio" id="general" name="general">
+                    <label for="general">General Inquiry</label>
+                </div>    
+                <div class="form-item column3">
+                    <input type="radio" id="reservation" name="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div class="form-item column3">
+                    <input type="radio" id="website" name="website">
+                    <label for="website">Website Suggestion</label>
+                </div>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea name="feedback" id="feedback" rows="6" placeholder="Write your message here"></textarea>            
+                <div class="form-item column1">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+            </fieldset>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="https://app.moqups.com/ljfeIk1iRPghv8JVAvgA3kfRJ05iOZ69/view/page/ad64222d5">Contact Us wireframe image</a>
+            <p>©2024 Whitewater Gabriel Dubiela</p>
+            <nav>
+                <a href="https://facebook.com">
+                    <img src="images/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.webp" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.webp" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
