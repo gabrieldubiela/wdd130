@@ -212,7 +212,7 @@ button {
 }
 
 .column1 {
-    grid-template-columns: 1.15fr 1fr 1.5fr;
+    grid-template-columns: 1.35fr 1fr 1.5fr;
 }
 
 .column2 {
