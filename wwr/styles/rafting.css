@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     color: var(--primary-color);
     font-family: var(--heading-font);
@@ -56,6 +56,7 @@ p {
     color: var(--primary-color);
     font-family: var(--heading-font);
     text-align: left;
+    margin-left: 10px;
 }
 iframe {
     width: 350px;
@@ -84,9 +85,18 @@ header {
     border: 0.1px solid var(--primary-color);
     width: 100px;
 }
+
+.header-navigation p {
+    width: 660px;
+}
+
 div {
     position: relative;
 }
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+  }
 .hero-img {
     display: block;
     width: 100%;
@@ -129,7 +139,8 @@ article {
 .item4 {
     grid-column: 3;
     grid-row: 2;
-} 
+}
+
 .adventure-layout {
     display: flex;
     text-align: center;
@@ -152,7 +163,7 @@ article {
     font-family: var(--heading-font);
 }
 form {
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
     padding: 5px;
     border: var(--primary-color);
     border-radius: 0.2px;
@@ -168,7 +179,7 @@ fieldset {
     padding: 15px;
     margin: 10px;
     border: 1px solid var(--primary-color);
-    width: 1000px;
+    width: 90%;
     font-family: var(--heading-font);
 }
 
@@ -197,15 +208,16 @@ input[type="checkbox"] {
     vertical-align: bottom;
     margin-right: 10px;
 }
-
-button {
+.button {
     margin: 5px;
     border-radius: 0.5px;
     font-size: 1.15rem;
     width: 155px;
     height: 40px;
     background-color: var(--accent1-color);
+    text-decoration: none;
 }
+
 .form-item {
     display: grid;
     align-items: center;
@@ -222,6 +234,80 @@ button {
 .column3 {
     grid-template-columns: 1fr 29fr;
 }
+
+.homegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.homegrid img {
+    height: 240px;
+    margin-top: 15px;
+}
+.homegrid p {
+    margin: 15px;
+}
+
+.tripgrid {
+    display: grid;
+    grid-template-columns: 1.4fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    text-align: center;
+    gap: 15px;
+}
+
+.tripgrid img{
+    height: 200px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.tripgrid p{
+    margin-bottom: 12px;
+}
+
+.tripgrid div {
+    margin-top: -20px;
+}
+
+.tripgrid a{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 7px;
+    background-color: var(--accent1-color);
+    text-decoration: none;
+}
+
+.centertext {
+    text-align: center;
+    margin: 10px 0 10px 10px;
+    background-color: var(--accent2-color);
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Stretch the image to cover the entire container */
+    height: 100%; /* Stretch the image to cover the entire container */
+    object-fit: cover;  /* Ensure the entire image is visible within the container */
+    z-index: -1;  /* Place the image behind the text content */
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
 
 footer p {
     text-align: center;
